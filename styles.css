@@ -1,0 +1,67 @@
+html,
+body {
+    margin: 0;
+    color: white;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.information-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.information-class p {
+    margin: 0;
+    padding: 0;
+}
+
+.temperature-p {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.humiditywind-class {
+    display: flex;
+    gap: 200px;
+    margin-top: 50px;
+}
+
+.input-class {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-class input {
+    width: 250px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: 2px solid #adadad;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-class input:focus {
+    border-color: #3a4d69;
+}
