@@ -1,12 +1,18 @@
-html,
-body {
+html, body {
+    height: 100%;
     margin: 0;
-    color: white;
-    overflow: hidden;
-    font-size: 30px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: url("./weather.png") center/cover no-repeat fixed;
+    color: white;
+    font-size: 30px;
+    font-family: "Trebuchet MS","Lucida Sans Unicode","Lucida Grande",sans-serif;
+}
 .bg {
     position: fixed;
     inset: 0;
@@ -16,14 +22,6 @@ body {
     z-index: -1;
     pointer-events: none;
 }
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .information-class {
     display: flex;
     flex-direction: column;
